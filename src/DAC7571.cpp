@@ -106,9 +106,9 @@ void DAC5571::writedac(float voltage, float Vdd)  //Input the desired voltage an
 	uint16_t data_i;
 	uint16_t data_config;
 	//Check to see if requested voltage is greater than Vdd and if it is set the voltage to VDD
-	If (voltage > Vdd)
+	if (voltage > Vdd)
 	{
-		voltage = Vdd);
+		voltage = Vdd;
 	}
 	//Determine the number of total bits based on the Chip being used
 	if (m_bitshift = 0)  //DAC7571
